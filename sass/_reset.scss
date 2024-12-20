@@ -1,0 +1,58 @@
+$text-main-color: #1D252C;
+$text-secondary-color: #5E6E89;
+$green-main-color: #56B280;
+$bg-third-color: #F7F8FA;
+$bg-fourth-color: #56B2801A;
+$bg-footer-color: #272727;
+$first-font: "Roboto", sans-serif;
+$second-font: "Poppins", sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: $text-main-color;
+}
+
+.container{
+    max-width: 1110px;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+button, input{
+    border: none;
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+    background: none;
+}
+
+.to-left{
+    background: linear-gradient(90deg, #ddd, #aaa, #ddd);
+    background-size: 200%;
+    animation: toLeft 1s linear infinite;
+}
+@keyframes toLeft {
+    to{
+        background-position: 200%;
+    }
+}
